@@ -1,6 +1,5 @@
 
 import facebook
-import requests
 from option import parser
 
 #____________________________________________________________________________||
@@ -23,7 +22,4 @@ access_token = token
 user = "me"
 
 graph = facebook.GraphAPI(access_token)
-profile = graph.get_object(user)
-posts = graph.get_connections(user, 'friends')
-
 graph.put_object( user , "feed", message = wallMessage )
