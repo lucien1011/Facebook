@@ -5,4 +5,4 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Argument Parser for Facebook')
 
-parser.add_argument('--account', action='store', dest='account',help="log in account")
+parser.add_argument('--token', action='store', dest='token', help='token')
